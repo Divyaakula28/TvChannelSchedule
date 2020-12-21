@@ -65,7 +65,6 @@ fake-useragent==0.1.11
 Faker==4.1.1
 filelock==3.0.12
 filetype==1.0.7
-Fiona @ file:///C:/Users/akula/Downloads/Fiona-1.8.13-cp37-cp37m-win_amd64.whl
 Flask==1.1.1
 Flask-Admin==1.5.3
 Flask-Bcrypt==0.7.1
