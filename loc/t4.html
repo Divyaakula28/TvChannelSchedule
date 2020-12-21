@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+	 <title>Untitled</title>
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="" type="text/css"/>
+ </head>
+	 <body>
+	 <select id="year"></select>
+	 <script>
+	 var year = 1900; 
+	 var till = 2014; 
+	 var options = ""; 
+	 for(var y=year; y<=till; y++)
+	 { options += "<option>"+ y +"</option>"; 
+	 } document.getElementById("year").innerHTML = options 
+	 </script>
+	 </body>
+ </html>
