@@ -84,7 +84,6 @@ fpdf==1.7.2
 future==0.17.1
 fuzzywuzzy==0.17.0
 gcloud==0.18.3
-GDAL @ file:///C:/Users/akula/Downloads/GDAL-3.0.4-cp37-cp37m-win_amd64.whl
 geojson==2.5.0
 geopandas==0.7.0
 get==0.0.0
