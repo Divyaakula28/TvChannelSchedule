@@ -1,0 +1,95 @@
+{% extends "h1.html" %}
+{% block body %}
+<html>
+<body>
+<script language="JavaScript">
+var d = new Date();
+h = (d.getHours()<10?'0':'') + d.getHours();
+m = d.getMinutes();
+//document.write(m);
+var tm='{{time}}';
+var hr='{{r}}';
+var mint='{{s}}';
+var pro='{{programs}}';
+
+tm=tm.slice(1,-1);
+tm=tm.split(',');
+
+hr=hr.slice(1,-1)
+hr=hr.split(',');
+
+mint=mint.slice(1,-1)
+mint=mint.split(',');
+
+pro=pro.slice(1,-1);
+pro=pro.split(',');
+
+if (h[0]==0){
+	h=h.slice(1);
+}
+h=parseInt(h, 10);
+m=parseInt(m, 10);
+document.write(m);
+h=15;
+m=25;
+for(var j=0;j<=tm.length-1;j++){
+	k=hr[j];
+	min=mint[j];
+	if(k!=0)
+}
+for(var j=0;j<=tm.length-1;j++){
+	k=hr[j];
+	min=mint[j];
+	if(k==h){
+		if(m>=min){
+			l=tm[j]+':'+pro[j];
+			document.write(l.fontcolor( "red" ));
+			document.write("<br />");	}
+		else{
+			l=tm[j]+':'+pro[j];
+			document.write(l.fontcolor( "blue" ));
+			document.write("<br />");	
+		}
+}
+	else{
+		l=tm[j]+':'+pro[j];
+		document.write(l.fontcolor( "blue" ));
+		document.write("<br />");	
+
+}
+		
+
+}
+// end JS code hide -->
+</script>
+<h1>h<h1>
+</body>
+ {% endblock%}
+</html>
+if(r[i]<hr){
+       document.write("<tr class=\"content-table\" style=\"color: #FF6347\"><td >"+tm[i]+"</td><td >"+pro[i]+"</td><td >"+typ[i]+"</td><td >"+dis[i]+"</td></tr>"); } 
+    else if(r[i]==hr){
+      if(mnt[i]==0){
+        if(mnt[i]<=min && min<=30){
+          document.write(mnt[i])
+          document.write("<tr class=\"content-table\" style=\"color: #10F86A\"><td >"+tm[i]+"</td><td >"+pro[i]+"</td><td >"+typ[i]+"</td><td >"+dis[i]+"</td></tr>"); }
+        else{
+          document.write(mnt[i])
+          document.write("<tr class=\"content-table\" style=\"color: #FF6347\"><td >"+tm[i]+"</td><td >"+pro[i]+"</td><td >"+typ[i]+"</td><td >"+dis[i]+"</td></tr>"); }
+        }
+      else if(mnt[i]==30){
+        if(mnt[i]<=min && min<=59){
+          document.write(mnt[i])
+          document.write("<tr class=\"content-table\" style=\"color: #10F86A\"><td >"+tm[i]+"</td><td >"+pro[i]+"</td><td >"+typ[i]+"</td><td >"+dis[i]+"</td></tr>"); }
+        else{
+          document.write(mnt[i])
+          document.write("<tr class=\"content-table\" style=\"color: #000000\"><td >"+tm[i]+"</td><td >"+pro[i]+"</td><td >"+typ[i]+"</td><td >"+dis[i]+"</td></tr>"); }
+        }          
+      else {
+        document.write("<tr class=\"content-table\" style=\"color: #00FFFF\"><td >"+tm[i]+"</td><td >"+pro[i]+"</td><td >"+typ[i]+"</td><td >"+dis[i]+"</td></tr>"); }
+        
+    }
+
+    else{
+      document.write("<tr class=\"content-table\" style=\"color: #000000\"><td >"+tm[i]+"</td><td >"+pro[i]+"</td><td >"+typ[i]+"</td><td >"+dis[i]+"</td></tr>");
+    }

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>	
+	<link rel="stylesheet" type="text/css" href="{%static 'css/nav.css'%}">
+</head>
+
+
+<div id="main">
+	<nav>
+		<img class="logo" src="{% static 'images/mainlogo1.png' %}"  align="center">
+		<ul>
+			<li class="active"><a href="{% url 'home' %}" >Home</a></li>
+			<li><a href="{% url 'drop' %}">Search</a></li>
+			<li><a href="{% url 'dis' %}">Discriptive</a></li>
+		</ul>
+	</nav>
+</div>	
+{% block body %}
+{% endblock %} 		
+</html>
