@@ -26,7 +26,7 @@ SECRET_KEY = '9csbrrnl#37sv!xafairhs(1k=byg6sf3mht#v@688cp=iu6z5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["tvchannel.herokuapp.com",'127.0.0.1']
+ALLOWED_HOSTS = ["tvchannel.herokuapp.com",'localhost','127.0.0.1']
 
 
 # Application definition
